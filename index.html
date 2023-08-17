@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candle Wax - <%= title %></title>
+    <!-- Google Fonts 'Font-Family': Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Google Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <!-- Stylesheets -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/animations.css" rel="stylesheet" type="text/css" />
+    <link href="css/components/Nav.css" rel="stylesheet" type="text/css" />
+    <link href="css/components/Header.css" rel="stylesheet" type="text/css" />
+    <link href="css/pages/HomePage.css" rel="stylesheet" type="text/css" />
+    <link href="css/components/Footer.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+    <nav>
+
+        <ul class="navLinks">
+            <a href="./index.html" class="linkTo">Home</a>
+            <a href="./ShopPage.html" class="linkTo">Shop</a>
+            <a href="./ShopPage.html" class="linkTo">Fragrances</a>
+        </ul>
+        <div>
+            <h1>wax liT!</h1>
+            <span>Candle wax store</span>
+        </div>
+        <ul>
+            <li>
+                <span class="material-symbols-outlined">favorite</span>
+                <span>( 0 )</span>
+            </li>
+            <li>
+                <span class="material-symbols-outlined">shopping_bag</span>
+                <span>( 0 )</span>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <h1 class="watermark-header">wax liT!</h1>
+        <article>
+            <h1>refresh</h1>
+            <button type="button" onclick="window.location.href='/shop'">Shop Now</button>
+        </article>
+    </header>
+
+    <main>
+        <!-- 
+            Shop Category
+        -->
+        <section id="shop-by-category">
+            <div class="shop-by-category">
+                <article>
+                    <h1>Home Decor</h1>
+                    <a href="">
+                        <span class="shopping-link-hide">Shop Now</span>
+                        <span class="shopping-category-count">4 products</span>
+                    </a>
+                </article>
+                <img src="./assets/product/bad-b tch/Bad B tch.png" />
+            </div>
+
+            <div class="shop-by-category">
+                <article>
+                    <h1>Fragrances</h1>
+                    <a href="">
+                        <span class="shopping-link-hide">Shop Now</span>
+                        <span class="shopping-category-count"> 7products</span>
+                    </a>
+                </article>
+                <img src="./assets/product/bad-b tch/Bad B tch.png" />
+            </div>
+        </section>
+        <!--
+            in this section, I'm only interested in querying the database from the node server to get the items that have label of best-sellers. only limited to 3.
+        -->
+        <section id="best-sellers">
+            <span>Candles & Diffusers</span>
+            <h2>Best Sellers</h2>
+            <h1 class="watermark freehand">wax liT!</h1>
+            <ul>
+                <!--
+                    best sellers
+                -->
+                <li class="best-seller-items">
+                    <div class="best-sellers">
+                        <div style="background-image: url('./assets/product/bad-b tch/bad b tch.jpg">
+                            <ul>
+                                <span class="material-symbols-outlined quick-view">visibility</span>
+                                <span class="material-symbols-outlined add-to-favorites">favorite</span>
+                            </ul>
+                        </div>
+                        <h3 class="model">product model</h3>
+                        <span class="best-seller-details">Insert a short detailed description of product here.</span>
+                        <span class="best-sellers-">product price</span>
+                        <button type="button" value='' class="add-to-cart">Add To Cart</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <!--
+            this section I'm interested in creating an ad or promotion
+        -->
+        <section id="promotion" class="promotion">
+            <article>
+                <h1>Lorem ipsum dolor</h1>
+                <p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+            </article>
+        </section>
+        <!-- 
+            featured-collection
+        -->
+        <section id="featured-collection">
+            <article>
+                <span>ROMANTIC TENSIONS</span>
+                <h1>Duis aute irure dolor in reprehenderit</h1>
+                <button type="button">Learn More</button>
+            </article>
+            <img src="./assets/product/lamour love/French Candle - Lamour Love - Almond.jpg" />
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- JavaScripts -->
+    <script>
+        $(".add-to-cart").click(function () {
+            let value = this.getAttribute("value");
+            alert("this button's value: " + value);
+            
+        });
+    </script>
+</body>
+</html>
