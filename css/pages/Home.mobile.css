@@ -1,0 +1,266 @@
+@media only screen and (min-width: 325px) and (max-width: 800px) {
+
+ /*   
+@import url('https://fonts.googleapis.com/css2?family=Freehand&display=swap');*/
+    #shop-by-category {
+        height: 425px;
+        max-height: 300px;
+        padding: 0;
+    }
+
+    .shop-by-category {
+        overflow: hidden;
+        color: white;
+    }
+
+    #shop-by-category>:nth-child(1) {
+        background-image: -webkit-linear-gradient(60deg, #fbc7d4, #9796f0);  
+        background-image:  linear-gradient(60deg, #fbc7d4, #9796f0); 
+    }
+
+    #shop-by-category>:nth-child(2) {
+        background-image: -webkit-linear-gradient(60deg, #E9E4F0, #D3CCE3);
+        background-image:  linear-gradient(60deg, #E9E4F0, #D3CCE3); 
+    }
+
+    .shop-by-category> article {
+        gap: 16px;
+        left: 20px;
+        height: 100px;
+    }
+
+    .shop-by-category> article> h1 {
+        font-size: 28px;
+        color: black;
+    }
+
+    .shop-by-category> article> a {
+        color: black;
+    }
+
+    .shopping-link-hide {
+        flex: 1;
+        display: flex;
+        min-width: 100%;
+        text-align: left;
+        transition: 0.32s linear;
+    }
+
+    .shopping-category-count {
+        flex: 1;
+        display: flex;
+        min-width: 100%;
+        text-align: left;
+        transition: 0.32s linear;
+    }
+
+    .shop-by-category> article> a:hover> .shopping-link-hide {
+        transform: translateX(100%);
+        transition: 0.16s linear;
+        cursor: pointer;
+    }
+
+    .shop-by-category> article> a:hover> .shopping-category-count {
+        transform: translateX(100%);
+        transition: 0.16s linear;
+        cursor: pointer;
+    }
+
+    .shop-by-category> img {
+        object-fit: cover;
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    /** BEST SELLERS SECTION */
+    #best-sellers {
+        position: relative;
+        padding-bottom: 20px;
+    }
+
+    #best-sellers>:nth-child(1) {
+        font-size: 12px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding: 16px;
+        z-index: 2;
+    }
+
+    #best-sellers>:nth-child(2) {
+        font-size: 35px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        z-index: 2;
+    }
+
+    .watermark {
+        font-size: 85px;
+    }
+
+    #best-sellers> ul {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(400px, 400px);
+        grid-row-gap: 16px;
+        padding: 20px;
+    }
+
+    .best-seller-items {
+        max-height: 100%;
+        overflow: hidden;
+    }
+
+    .best-sellers {
+        grid-template-rows: 1fr auto auto auto 45px;
+        grid-gap: 4px;
+        height: 100%;
+        max-width: 90%;
+    }
+
+    .best-sellers>:nth-child(1) {
+   
+    }
+
+    .best-sellers>:nth-child(1)> ul {
+        background-color: rgb(255, 255, 255, 0.45);
+        display: none;
+        align-items: end;
+        justify-content: center;
+        gap: 16px;
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+        transition: 0.32s ease-out;
+    }
+
+    .best-sellers>:nth-child(1)> ul> .material-symbols-outlined {
+        font-size: 18px;
+        cursor: pointer;
+        width: 28px;
+        height: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(-20px);
+    }
+
+    .best-sellers>:nth-child(1):hover> ul {
+        display: flex;
+        cursor: pointer;
+        transition: 0.16s ease-in;
+    }
+
+    .best-sellers>:nth-child(1):hover> ul>:nth-child(1) {
+        animation-name: fallIn;
+        animation-duration: 0.5s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+
+    .best-sellers>:nth-child(1):hover> ul>:nth-child(2) {
+        animation-name: fallIn;
+        animation-delay: 0.25s;
+        animation-duration: 0.5s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+
+    .best-sellers>:nth-child(2) {
+        font-size: 16px;
+    }
+    .best-sellers>:nth-child(3) {
+        font-size: 12px;
+    }
+
+    .best-sellers>:nth-child(4) {
+        font-size: 12px;
+    }
+
+    .best-sellers> button {
+        font-size: 12px;
+    }
+
+    .best-sellers> button:hover {
+        transition: 0.16s ease-in;
+        background-color: whitesmoke;
+        color: #343a40;
+        border: 1px solid lightgray;
+        box-shadow: 0 0 20px gray;
+        cursor: pointer;
+    }
+
+    /* promotions */
+    #promotion {
+        width: 100%;
+        max-width: 100%;
+        height: 425px;
+        max-height: 425px;
+        margin: 0;
+    }
+
+    #promotion> article {
+        position: absolute;
+        left: 20px;
+        bottom: 20px;
+        color: #343a40;
+        width: calc(100% - 40px);
+        height: 200px;
+    }
+
+    #promotion> article> h1 {
+        font-size: 21px;
+        max-width: 90%; 
+    }
+
+    #promotion> article> p {
+        text-align: left;
+        font-size: 14px;
+        line-height: 2.0;
+        color: gray;
+        width: 100%;
+        max-width: 90%;
+        padding: 0;
+    }
+
+    /* featured-collection */
+    #featured-collection {
+        height: 600px;
+        max-height: 600px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
+    }
+
+    #featured-collection> article {
+        gap: 4px;
+        padding: 20px;
+    }
+
+    #featured-collection> article>:nth-child(1) {
+        font-size: 12px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        max-width: 60%;
+        text-align: left;
+    }
+
+    #featured-collection> article>:nth-child(2) {
+        font-size: 28px;
+        max-width: 90%;
+        text-align: center;
+    }
+
+    #featured-collection> article>:nth-child(3) {
+        font-size: 16px;
+        width: 90%;
+        max-width: fit-content;
+    }
+
+    #featured-collection> img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        max-height: 200px;
+    }
+
+}
