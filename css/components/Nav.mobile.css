@@ -1,0 +1,95 @@
+@media only screen and (min-width: 325px) and (max-width: 800px) {
+
+        nav {
+            max-height: 100px;
+            background-color: #343a40;
+            color: white;
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 125px 60px;
+            border-bottom: 0;
+            overflow: hidden;
+            padding: 0;
+        }
+
+        .navLinks {
+            padding: 0;
+            align-items: center;
+            justify-content: start;
+            flex-direction: column;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            background-color: black;
+            color: white;
+            min-height: 100vh;
+            min-width: 100vw;
+            transform: translateX(200vw);
+        }
+
+        #close-menu {
+            height: 100px;
+            width: 100%;
+        }
+        
+        .linkTo {
+            color: white;
+            width: 85%;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .linkTo:hover {
+            transition: 0.16s ease-in;
+            color: lavender;
+            cursor: pointer;
+        }
+        
+        nav>:nth-child(2) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 0;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        
+        nav>:nth-child(2)> h1 {
+            font-size: 28px;
+            text-transform: none;
+        }
+        
+        nav>:nth-child(2)>:nth-child(2) {
+            font-size: 12px;
+            font-weight: bold;
+            color: gray;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav>:nth-child(3) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+            padding: 0;
+            max-width: 100%;
+            overflow: hidden;
+        }
+        
+        nav>:nth-child(3)> li {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+            align-items: center;
+            /*width: 60px;*/
+            font-size: 10px;
+        }
+        .menu-button-icon {
+            display: flex;
+        }
+}
