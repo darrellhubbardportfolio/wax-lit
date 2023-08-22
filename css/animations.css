@@ -7,3 +7,21 @@
         transform: translateY(-10px);
     }
 }
+
+@keyframes openMenu {
+    from {
+        transform: translateX(200vw);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes closeMenu {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(200vw);
+    }
+}
